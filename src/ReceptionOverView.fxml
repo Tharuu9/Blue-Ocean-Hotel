@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OverViewReception" prefHeight="527.0" prefWidth="773.0" style="-fx-background-color: #191970;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReceptionOverViewController">
+   <children>
+      <Label layoutX="170.0" layoutY="32.0" prefHeight="53.0" prefWidth="421.0" style="-fx-background-color: #1E90FF;" text="Receptionist Over View">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="260.0" layoutY="152.0" mnemonicParsing="false" onAction="#OnActionReserveRoom" prefHeight="52.0" prefWidth="253.0" style="-fx-background-color: #008B8B #008B8B;" text="Reserve Room" textFill="#250202">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="260.0" layoutY="231.0" mnemonicParsing="false" onAction="#OnActionMaintenance" prefHeight="52.0" prefWidth="253.0" style="-fx-background-color: #B8860B;" text="Room Maintenance">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="667.0" layoutY="474.0" mnemonicParsing="false" onAction="#OnActionNext" style="-fx-background-color: #8B0000;" text="Next--&gt;" textFill="#170000">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="474.0" mnemonicParsing="false" onAction="#OnActionBack" style="-fx-background-color: #8B0000;" text="&lt;--Back" textFill="#170000">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

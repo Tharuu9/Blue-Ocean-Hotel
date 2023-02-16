@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="editR" prefHeight="397.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditRoomController">
+   <children>
+      <ImageView fitHeight="472.0" fitWidth="639.0" layoutX="-6.0" layoutY="24.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/main%2520form/10.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="100.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/main%2520form/2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="119.0" layoutX="499.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/main%2520form/3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="228.0" layoutY="14.0" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: red;" text="Room Edit" textFill="#1d1e1d">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="389.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: red;" text="&lt;Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="roomId1" layoutY="122.0" prefHeight="25.0" prefWidth="144.0" style="-fx-background-color: #00e5ff;" text="Room ID :-">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="roomId2" layoutX="144.0" layoutY="123.0" prefHeight="37.0" prefWidth="258.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="roomE1" layoutY="180.0" prefHeight="38.0" prefWidth="245.0" style="-fx-background-color: #00e5ff;" text="Room Type           :-" visible="false">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="roomE3" layoutY="234.0" prefHeight="38.0" prefWidth="245.0" style="-fx-background-color: #00e5ff;" text="Room Bed Count  :-" visible="false">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="roomE5" layoutY="287.0" prefHeight="38.0" prefWidth="245.0" style="-fx-background-color: #00e5ff;" text="Room Bath Count :-" visible="false">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="roomE2" layoutX="245.0" layoutY="181.0" prefHeight="37.0" prefWidth="258.0" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="roomE4" layoutX="243.0" layoutY="235.0" prefHeight="37.0" prefWidth="258.0" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="roomE6" layoutX="243.0" layoutY="288.0" prefHeight="37.0" prefWidth="258.0" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveE" layoutX="486.0" layoutY="387.0" mnemonicParsing="false" onAction="#editNow" style="-fx-background-color: Blue;" text="EDIT NOW" textFill="#00ffff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="wongId" layoutX="499.0" layoutY="452.0" style="-fx-background-color: red;" text="ID Is Not Found" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="457.0" prefHeight="27.0" prefWidth="91.0" style="-fx-background-color: Red;" text="SAVE EDIT" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

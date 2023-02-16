@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="roomAdmin" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddRoomController">
+   <children>
+      <ImageView fitHeight="571.0" fitWidth="741.0" layoutX="-36.0" layoutY="-67.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/main%2520form/6.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="222.0" layoutY="24.0" style="-fx-background-color: #8FBC8F;" text="Add Room" textFill="#2f02f5">
+         <font>
+            <Font name="Algerian" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="453.0" mnemonicParsing="false" onAction="#OnActionBack" style="-fx-background-color: red;" text="&lt;--Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutY="148.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #07caf8;" text="Room Id">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="Roomid" alignment="TOP_RIGHT" layoutX="174.0" layoutY="149.0" prefHeight="25.0" prefWidth="358.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="RoomType" alignment="TOP_RIGHT" layoutX="174.0" layoutY="199.0" prefHeight="25.0" prefWidth="358.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #BA55D3;" text="Room Type">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="2.0" layoutY="266.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #3CB371;" text="Bed Count">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="2.0" layoutY="318.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #C71585;" text="Bath Count">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="BedCount" alignment="TOP_RIGHT" layoutX="174.0" layoutY="266.0" prefHeight="25.0" prefWidth="358.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="BathCount" alignment="TOP_RIGHT" layoutX="174.0" layoutY="319.0" prefHeight="25.0" prefWidth="358.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="270.0" layoutY="389.0" mnemonicParsing="false" onAction="#OnActionAdd" style="-fx-background-color: #8B0000;" text="Add Now">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="saves" layoutX="424.0" layoutY="397.0" style="-fx-background-color: Red;" text="Save Successfull" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

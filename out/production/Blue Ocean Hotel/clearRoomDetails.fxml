@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="clearRoomDetails" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clearRoomDetailsController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.76" pickOnBounds="true">
+         <image>
+            <Image url="@img/main%2520form/4.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="139.0" layoutY="14.0" prefHeight="44.0" prefWidth="321.0" style="-fx-background-color: #FF1493;" text="Clear Room Details" textFill="#1d1e1d">
+         <font>
+            <Font name="Bell MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="192.0" layoutY="278.0" mnemonicParsing="false" onAction="#OnActionShowRoom" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #DAA520;" text="Show Room">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="192.0" layoutY="216.0" mnemonicParsing="false" onAction="#OnActionEditRoom" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #FF00FF;" text="Edit Room">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="192.0" layoutY="154.0" mnemonicParsing="false" onAction="#OnActionDelete" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #228B22;" text="Delete Room">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="341.0" mnemonicParsing="false" onAction="#OnActionBack" style="-fx-background-color: #B22222;" text="&lt;--Back">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="192.0" layoutY="95.0" mnemonicParsing="false" onAction="#OnActionAddRoom" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #07caf8;" text="Add Room">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

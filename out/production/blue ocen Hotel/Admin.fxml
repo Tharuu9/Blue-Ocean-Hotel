@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="admin1" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2bd3d4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminController">
+   <children>
+      <ImageView fitHeight="92.0" fitWidth="156.0" layoutX="502.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/main%2520form/3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="159.0" layoutY="31.0" style="-fx-background-color: #FF8C00;" text="Admin Login Page ">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="166.0" text="User Name  :-">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="208.0" text="Password     :-">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameu" alignment="TOP_RIGHT" layoutX="254.0" layoutY="168.0" prefHeight="25.0" prefWidth="232.0" />
+      <TextField fx:id="passu" alignment="TOP_RIGHT" layoutX="254.0" layoutY="210.0" prefHeight="25.0" prefWidth="232.0" />
+      <Button layoutX="258.0" layoutY="265.0" mnemonicParsing="false" onAction="#OnActionLogin" style="-fx-background-color: #FFF8DC;" text="Login" textFill="#731194">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="wong" layoutX="188.0" layoutY="339.0" prefHeight="26.0" prefWidth="279.0" text="your name or password is wong" textFill="#f20a0a" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="353.0" mnemonicParsing="false" onAction="#OnActionBack" style="-fx-background-color: red;" text="&lt;--Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="costomerAdd" prefHeight="646.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddCoustemerController">
+   <children>
+      <ImageView fitHeight="646.0" fitWidth="776.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/main%2520form/15.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="275.0" layoutY="-6.0" style="-fx-background-color: #3ecd32;" text="Reception Bord" textFill="#1d1e1d">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="84.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/main%2520form/2.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="customerView" layoutY="159.0" prefHeight="488.0" prefWidth="647.0">
+        <columns>
+          <TableColumn fx:id="customerId" minWidth="8.0" prefWidth="120.0" text="Customer Id" />
+            <TableColumn fx:id="email" prefWidth="138.0" text="Email" />
+            <TableColumn fx:id="cAddress" prefWidth="171.0" text="Customer   Address" />
+            <TableColumn fx:id="cNo" prefWidth="100.0" text="Contact No" />
+          <TableColumn fx:id="cName" prefWidth="117.0" text="Customer Name" />
+        </columns>
+      </TableView>
+      <TextField fx:id="enterId" layoutY="84.0" prefHeight="25.0" prefWidth="70.0" promptText="Enter Id" />
+      <TextField fx:id="enterName" layoutY="109.0" promptText="Enter Name" />
+      <TextField fx:id="enterAdress" layoutX="147.0" layoutY="84.0" prefHeight="25.0" prefWidth="184.0" promptText="Enter Address" />
+      <TextField fx:id="ContactNo" layoutX="149.0" layoutY="109.0" promptText="Contact No" />
+      <TextField fx:id="emailText" layoutX="330.0" layoutY="84.0" prefHeight="25.0" prefWidth="296.0" promptText="Email" />
+      <Button layoutX="678.0" layoutY="95.0" mnemonicParsing="false" onAction="#saveDetails" style="-fx-background-color: #16e91f;" text="Save Details">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="680.0" layoutY="145.0" mnemonicParsing="false" onAction="#editDetails" style="-fx-background-color: #16e91f;" text="Edit Details">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="661.0" layoutY="188.0" mnemonicParsing="false" onAction="#deleteDetails" style="-fx-background-color: #16e91f;" text="Delete Details">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="685.0" layoutY="240.0" mnemonicParsing="false" onAction="#booking" style="-fx-background-color: #19cce6;" text="Booking">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="698.0" layoutY="310.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: red;" text="&lt;Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

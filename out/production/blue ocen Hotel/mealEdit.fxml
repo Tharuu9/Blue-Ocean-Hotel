@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="backMeal" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MealEditController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="627.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/main%2520form/14.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="238.0" layoutY="24.0" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: red;" text="Meal Edit" textFill="#1d1e1d">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="98.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/main%2520form/2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="119.0" layoutX="509.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/main%2520form/3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="6.0" layoutY="107.0" prefHeight="38.0" prefWidth="183.0" style="-fx-background-color: #00e5ff;" text="Meal ID :-">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mealId" layoutX="190.0" layoutY="108.0" prefHeight="37.0" prefWidth="293.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="mealTy" layoutX="5.0" layoutY="150.0" prefHeight="38.0" prefWidth="183.0" style="-fx-background-color: #00e5ff;" text="Meal Type :-" visible="false">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mealType" layoutX="189.0" layoutY="151.0" prefHeight="37.0" prefWidth="293.0" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="mealQuan" layoutX="5.0" layoutY="194.0" prefHeight="38.0" prefWidth="199.0" style="-fx-background-color: #00e5ff;" text="Meal Quantity:-" visible="false">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mealQuantity" layoutX="206.0" layoutY="195.0" prefHeight="37.0" prefWidth="277.0" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="mealPri" layoutY="241.0" prefHeight="38.0" prefWidth="164.0" style="-fx-background-color: #00e5ff;" text="Meal price :-" visible="false">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mealPrice" layoutX="164.0" layoutY="242.0" prefHeight="37.0" prefWidth="310.0" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="5.0" layoutY="361.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: red;" text="&lt;Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="495.0" layoutY="359.0" mnemonicParsing="false" onAction="#editNow" style="-fx-background-color: Blue;" text="EDIT NOW" textFill="#00ffff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="editS" layoutX="345.0" layoutY="366.0" style="-fx-background-color: red;" text="Edit Succusful" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="wongId" layoutX="483.0" layoutY="117.0" prefHeight="19.0" prefWidth="144.0" style="-fx-background-color: Red;" text="Wong Id Please Fix it" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="backFood" prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddFoodController">
+   <children>
+      <ImageView fitHeight="448.0" fitWidth="600.0" layoutY="3.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/main%2520form/11.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/main%2520form/2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="127.0" layoutX="491.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/main%2520form/3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="229.0" layoutY="14.0" style="-fx-background-color: Red;" text="Add Meal" textFill="#1d1e1d">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="183.0" layoutY="314.0" mnemonicParsing="false" onAction="#addFood" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: red;" text="Add Food">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="foodId" alignment="TOP_RIGHT" layoutX="183.0" layoutY="117.0" prefHeight="25.0" prefWidth="358.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #07caf8;" text="Food Type">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="foodType" alignment="TOP_RIGHT" layoutX="184.0" layoutY="159.0" prefHeight="25.0" prefWidth="358.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="9.0" layoutY="198.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #07caf8;" text="Food Quantity">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="foodQuantity" alignment="TOP_RIGHT" layoutX="183.0" layoutY="199.0" prefHeight="25.0" prefWidth="358.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="9.0" layoutY="238.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #07caf8;" text="Food Price">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="foodPrice" alignment="TOP_RIGHT" layoutX="183.0" layoutY="239.0" prefHeight="25.0" prefWidth="358.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="9.0" layoutY="116.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #07caf8;" text="Food ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutY="395.0" mnemonicParsing="false" onAction="#backFood" style="-fx-background-color: red;" text="&lt;Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="saveFood" layoutX="418.0" layoutY="378.0" style="-fx-background-color: yellow;" text="Save Succusful" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
